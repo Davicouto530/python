@@ -49,3 +49,13 @@ def inverter(palavra = ""):
 
     qtd = len(palavra)
     invertida = ""
+    for i in range(qtd - 1, -1, -1):
+        invertida += palavra[i]
+    return invertida
+
+def palindromo(palavra=""):
+    org = inverter(palavra).lower()
+    if palavra.lower() == org:
+        return "É um palindromo"
+    else:
+        return "Não é um palindromo" 
