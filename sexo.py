@@ -1,8 +1,11 @@
-sexo = input("Digite F se for mulher ou digite M se for masculino: ")
+# upper = converte para caracteres maiúsculos
+# lower = converte para caracteres minúsculos
+sexo = input("Digite F se for mulher ou digite M se for masculino: ").lower()
 
-if sexo == 'f' or sexo == 'F':
-    print("Você é feminina")
-elif sexo == 'f' or sexo == 'F':
-    print("Você é feminina")
+# sexo = sexo.lower()
+if sexo.lower() == "f":
+    print("Feminino")
+elif sexo.lower() == "m":
+    ("Masculino")
 else:
-    print("Valor inválido")
+    print("Valor digitado inválido")
